@@ -1,6 +1,6 @@
 # react-notetakingfirebase
 
-[Edit on codesandbox.io](https://wen4z.csb.app/noteapp)
+[Edit on codesandbox.io](https://codesandbox.io/s/rough-hill-6tvog)
 
 This application is built using React, CSS and Firebase. The application has been built with Mobile in mind and fast entry of items. The purpose of the application is to be used as a shopping list by categorizing the items (quick find when at the store) and reusing them for future lists (avoid rentering the items again).
 
