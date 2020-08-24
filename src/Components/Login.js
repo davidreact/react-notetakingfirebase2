@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import firebase from "../Services/firebase";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -11,7 +11,7 @@ const Login = ({ user }) => {
     firebase
       .auth()
       .signInWithEmailAndPassword(email, password)
-      .catch(error => {
+      .catch((error) => {
         console.log(error);
         setError(error);
       });
@@ -29,8 +29,8 @@ const Login = ({ user }) => {
 
       <form
         className="field is-horizontal"
-        onKeyDown={e => {
-          if (e.keyCode == 13) {
+        onKeyDown={(e) => {
+          if (e.keyCode === 13) {
             handlerSignIn();
           }
         }}
@@ -43,7 +43,7 @@ const Login = ({ user }) => {
                 type="username"
                 placeholder="username"
                 value={email}
-                onChange={e => setEmail(e.target.value)}
+                onChange={(e) => setEmail(e.target.value)}
               />
               <span className="icon is-small is-left">
                 <FontAwesomeIcon icon="user" />
@@ -57,7 +57,7 @@ const Login = ({ user }) => {
                 type="password"
                 placeholder="password"
                 value={password}
-                onChange={e => setPassword(e.target.value)}
+                onChange={(e) => setPassword(e.target.value)}
               />
               <span className="icon is-small is-left">
                 <FontAwesomeIcon icon="envelope" />
@@ -68,7 +68,7 @@ const Login = ({ user }) => {
         </div>
       </form>
       <p className="control">
-        <a className="button is-info" onClick={handlerSignIn}>
+        <a className="button is-info" onClick={handlerSignIn} href="##">
           Sign In
         </a>
       </p>
