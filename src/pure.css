@@ -68,6 +68,9 @@ body {
 
 .navLogo {
   width: 150px;
+  font-family: "Pacifico";
+  font-size: 1.9em;
+  padding-left: 10px;
 }
 
 .navMobile {

@@ -24,11 +24,12 @@ const Navigation = ({ user, signout }) => {
         >
           <div className="navBrand">
             <div className="navLogo">
-              <img
+              {/* <img
                 src="images/notetaker_logo.svg"
                 alt="logo"
                 className="mainLogo"
-              />
+              /> */}
+              <div className="mainLogo">Note App</div>
             </div>
             <div
               className="navMobile"
@@ -77,7 +78,7 @@ const Navigation = ({ user, signout }) => {
                     </NavLink>
                   </div>
                   <div className="navLink">
-                    <a onClick={signout} className="navLink">
+                    <a onClick={signout} className="navLink" href="###">
                       Sign Out
                     </a>
                   </div>
